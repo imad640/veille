@@ -1,0 +1,61 @@
+{
+  "updated": "2026-11-15",
+  "items": [
+    {
+      "category": "Sauvegardes",
+      "title": "Proxmox Backup Server : la sauvegarde locale est saine, mais où est la copie hors ligne ?",
+      "summary": "Rappelle que l'ANSSI demande une copie hors ligne, pas seulement hors site, et présente la réplication PBS vers un datastore opéré par un prestataire (article sponsorisé).",
+      "link": "https://www.it-connect.fr/proxmox-backup-server-la-sauvegarde-locale-est-saine-mais-ou-est-la-copie-hors-ligne/",
+      "date": "2026-09-09",
+      "source": "IT-Connect"
+    },
+    {
+      "category": "Sauvegardes",
+      "title": "Sauvegarde 3-2-1-1-0 : la nouvelle norme que votre PME doit connaître",
+      "summary": "Présente la règle 3-2-1-1-0 : plusieurs copies, des supports variés, un site distant, une copie isolée et des tests de restauration.",
+      "link": "https://www.clubic.com/actualite-594502-sauvegarde-3-2-1-1-0-la-nouvelle-norme-que-votre-pme-doit-connaitre.html",
+      "date": "2026-01-17",
+      "source": "Clubic"
+    },
+    {
+      "category": "Réglementation",
+      "title": "Découvrez la directive NIS 2 et passez à l'action !",
+      "summary": "Présentation de l'ANSSI sur la directive NIS 2 et le socle de cybersécurité imposé aux entités essentielles et importantes. Les sauvegardes y figurent parmi les mesures simples souvent non appliquées.",
+      "link": "https://messervices.cyber.gouv.fr/documents-ressources/2026-03-27-NIS2.pdf",
+      "date": "",
+      "source": "ANSSI"
+    },
+    {
+      "category": "Sauvegardes",
+      "title": "Les fondamentaux pour la sauvegarde d'un SI, d'après l'ANSSI",
+      "summary": "Bonnes pratiques issues du guide de l'ANSSI : architecture, opérations, chiffrement, virtualisation, externalisation et sauvegardes immuables.",
+      "link": "https://www.it-connect.fr/les-fondamentaux-pour-la-sauvegarde-dun-si-dapres-lanssi/",
+      "date": "2023-11-22",
+      "source": "IT-Connect"
+    },
+    {
+      "category": "Sauvegardes",
+      "title": "Les sauvegardes immuables pour les débutants",
+      "summary": "Explique les sauvegardes immuables, qui ne peuvent être ni modifiées ni supprimées, et leur intérêt face aux ransomwares. Conseille une copie immuable ou isolée hors ligne.",
+      "link": "https://www.it-connect.fr/les-sauvegardes-immuables-pour-les-debutants/",
+      "date": "2023-07-09",
+      "source": "IT-Connect"
+    },
+    {
+      "category": "Ransomwares",
+      "title": "La CISA donne ses conseils pour se protéger des ransomwares",
+      "summary": "La CISA a actualisé son guide #StopRansomware de 29 pages, avec un accent sur les sauvegardes Cloud externalisées et l'architecture Zero Trust.",
+      "link": "https://www.it-connect.fr/comment-se-proteger-des-ransomwares-la-cisa-a-mis-a-jour-son-guide/",
+      "date": "2023-06-05",
+      "source": "IT-Connect"
+    },
+    {
+      "category": "Ransomwares",
+      "title": "L'ANSSI : un nouveau guide sur la gestion des attaques de ransomware",
+      "summary": "Guide de 21 pages de l'ANSSI sur la gestion des attaques par rançongiciels. Rappelle que les sauvegardes doivent être déconnectées du SI, car elles sont aussi ciblées.",
+      "link": "https://www.it-connect.fr/lanssi-un-nouveau-guide-sur-la-gestion-des-attaques-de-ransomware/",
+      "date": "2020-09-08",
+      "source": "IT-Connect"
+    }
+  ]
+}
