@@ -2,12 +2,148 @@
   "updated": "2026-11-15",
   "items": [
     {
+      "category": "Ransomwares",
+      "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+      "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks.…",
+      "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+      "date": "2026-11-13",
+      "source": "The Hacker News"
+    },
+    {
+      "category": "Réglementation",
+      "title": "Cybersécurité : la CNIL sanctionne dix collectivités",
+      "summary": "La CNIL sanctionne dix collectivités pour des failles de cybersécurité. Amendes, RGPD, accès sensibles et NIS2.",
+      "link": "https://www.zataz.com/cybersecurite-la-cnil-sanctionne-dix-collectivites/",
+      "date": "2026-11-09",
+      "source": "ZATAZ"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans OpenSSH (05 novembre 2026)",
+      "summary": "[Mise à jour du 6 novembre 2026] Cette vulnérabilité porte l'identifiant CVE-2026-123158. Alpine a publié un bulletin de sécurité (cf. section Documentation) concernant cette vulnérabilité. Le CERT-FR précise que toute…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
+      "date": "2026-11-05",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
+      "summary": "**[Mise à jour du 26 octobre 2026]** Le 23 octobre 2026, PHP a publié un avis de sécurité concernant la vulnérabilité CVE-2026-115560. Celle-ci permet une exécution de code arbitraire à distance. L'éditeur estime que…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/",
+      "date": "2026-10-21",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure (ICS) (14 octobre 2026)",
+      "summary": "[Mise à jour du 2 novembre 2026] Le 29 octobre 2026, Ivanti a mis à jour son avis de sécurité du 13 octobre 2026 pour ajouter deux vulnérabilités (CVE-2026-111357 et CVE-2026-118527). Celles-ci permettent à un…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-013/",
+      "date": "2026-10-14",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Incident de sécurité ciblant les contrôleurs à distance des installations de réfrigération (12 octobre 2026)",
+      "summary": "Le CERT-FR a connaissance de nombreuses compromissions des controleurs à distance d'installation de réfrigération Danfoss série AK-SM, AK-SC ainsi que Copeland xweb et Dixell xweb. De manière générale l'exposition…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+      "date": "2026-10-12",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans Citrix NetScaler ADC et Gateway (28 septembre 2026)",
+      "summary": "**[Mise à jour du 05 octobre 2026]** Le 4 octobre 2026, Citrix a publié un avis concernant une nouvelle vulnérabilité (CVE-2026-88779) permettant un déni de service à distance. La CISA indique que cette vulnérabilité…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-011/",
+      "date": "2026-09-28",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans Metabase (10 septembre 2026)",
+      "summary": "Le 06 août 2026, Metabase a publié un avis de sécurité concernant une vulnérabilité critique permettant à un attaquant non authentifié de provoquer une injection SQL (SQLi) dans la base de donnée de l'application…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-010/",
+      "date": "2026-09-10",
+      "source": "CERT-FR"
+    },
+    {
       "category": "Sauvegardes",
       "title": "Proxmox Backup Server : la sauvegarde locale est saine, mais où est la copie hors ligne ?",
       "summary": "Rappelle que l'ANSSI demande une copie hors ligne, pas seulement hors site, et présente la réplication PBS vers un datastore opéré par un prestataire (article sponsorisé).",
       "link": "https://www.it-connect.fr/proxmox-backup-server-la-sauvegarde-locale-est-saine-mais-ou-est-la-copie-hors-ligne/",
       "date": "2026-09-09",
       "source": "IT-Connect"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans SonicWall Secure Mobile Access (02 septembre 2026)",
+      "summary": "Le 01 septembre 2026, SonicWall a publié un avis de sécurité concernant deux vulnérabilités affectant les Secure Mobile Access (SMA) 1000. La vulnérabilité critique CVE-2026-83548 permet une falsification de requêtes…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-009/",
+      "date": "2026-09-02",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans Microsoft Sharepoint (22 juillet 2026)",
+      "summary": "Le 14 juillet 2026, à l'occasion de sa mise à jour mensuelle, Microsoft a publié, entre autres, des correctifs pour deux vulnérabilités critiques affectant SharePoint. Les vulnérabilités CVE-2026-50522 et…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-008/",
+      "date": "2026-07-22",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans WordPress (20 juillet 2026)",
+      "summary": "Le 17 juillet 2026, WordPress a publié un correctif pour deux vulnérabilités : CVE-2026-60137 : une injection SQL (SQLi) ; CVE-2026-63030 : celle-ci permet un contournement de la politique de sécurité. Un attaquant…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-007/",
+      "date": "2026-07-20",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans Sonicwall Secure Mobile Access (15 juillet 2026)",
+      "summary": "Le 14 juillet 2026, Sonicwall a publié un avis de sécurité concernant deux vulnérabilités affectant les Secure Mobile Access (SMA) 1000. La vulnérabilité critique CVE-2026-15409 permet une falsification de requêtes…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-006/",
+      "date": "2026-07-15",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[Màj] Vulnérabilité dans Microsoft Exchange Server (15 mai 2026)",
+      "summary": "[Mise à jour du 11 juin 2026] Le 9 juin 2026, Microsoft a publié des versions correctives. [Publication initiale] Le 14 mai 2026, Microsoft a publié un avis de sécurité concernant la vulnérabilité CVE-2026-42897…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-005/",
+      "date": "2026-05-15",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans F5 BIG-IP Access Policy Manager (31 mars 2026)",
+      "summary": "Le 15 octobre 2025, F5 a publié un avis de sécurité concernant entre autres la vulnérabilité CVE-2025-53521. Celle-ci affecte BIG-IP APM et permet à un attaquant non authentifié d'exécuter du code à distance. Le 29…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-004/",
+      "date": "2026-03-31",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Note d’alerte – Ciblage des messageries instantanées (20 mars 2026)",
+      "summary": "Le CERT-FR observe une recrudescence de campagnes d’attaques ciblant les comptes de messagerie instantanées. Ces campagnes ciblent particulièrement les secteurs régaliens (personnalités politiques, cadres de…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-003/",
+      "date": "2026-03-20",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans Cisco Catalyst SD-WAN (25 février 2026)",
+      "summary": "Une vulnérabilité a été découverte dans Cisco Catalyst SD-WAN. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité. Cisco indique que la vulnérabilité CVE-2026-20127 est activement…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-002/",
+      "date": "2026-02-25",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (30 janvier 2026)",
+      "summary": "[Mise à jour du 09 février 2026] Le 6 février 2026, Ivanti a mis à disposition des scripts RPM de détection d'indicateurs de compromission, à utiliser en fonction de la version d'EPMM installée. L'éditeur a également…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-001/",
+      "date": "2026-01-30",
+      "source": "CERT-FR"
     },
     {
       "category": "Sauvegardes",
@@ -18,12 +154,196 @@
       "source": "Clubic"
     },
     {
-      "category": "Réglementation",
-      "title": "Découvrez la directive NIS 2 et passez à l'action !",
-      "summary": "Présentation de l'ANSSI sur la directive NIS 2 et le socle de cybersécurité imposé aux entités essentielles et importantes. Les sauvegardes y figurent parmi les mesures simples souvent non appliquées.",
-      "link": "https://messervices.cyber.gouv.fr/documents-ressources/2026-03-27-NIS2.pdf",
-      "date": "",
-      "source": "ANSSI"
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans React Server Components (05 décembre 2025)",
+      "summary": "**[Mise à jour du 11 décembre 2025]** Le CERT-FR a connaissance de multiples exploitations de la vulnérabilité CVE-2025-55182. Les serveurs avec une version vulnérable exposés après la publication des preuves de…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-014/",
+      "date": "2025-12-05",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Multiples vulnérabilités dans Cisco ASA et FTD (25 septembre 2025)",
+      "summary": "**[Mise à jour du 07 novembre 2025]** Le 5 novembre 2025, Cisco a mis a jour son billet de blogue initialement publié le 25 septembre 2025 (cf. section Documentation). L'éditeur déclare avoir connaissance d'une…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-013/",
+      "date": "2025-09-25",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (26 août 2025)",
+      "summary": "Le 26 août 2025, Citrix a publié un bulletin de sécurité (cf. section Documentation) concernant, entre autres, la vulnérabilité CVE-2025-7775. Celle-ci permet une exécution de code arbitraire à distance et affecte…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-012/",
+      "date": "2025-08-26",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Incidents de sécurité dans les pare-feux SonicWall (05 août 2025)",
+      "summary": "[Mise à jour du 7 août 2025] Le 6 août 2025, SonicWall a remplacé une partie de son communiqué initial pour indiquer que les incidents de sécurité évoqués étaient vraisemblablement corrélés à la vulnérabilité…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-011/",
+      "date": "2025-08-05",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Multiples vulnérabilités dans Microsoft SharePoint (21 juillet 2025)",
+      "summary": "**[Mise à jour du 23 juillet 2025]** Le 20 juillet 2025, Microsoft a publié des correctifs pour une vulnérabilité de type limitation insuffisante d'un chemin d'accès à un répertoire restreint, aussi appelé *path…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-010/",
+      "date": "2025-07-21",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans Citrix NetScaler ADC et NetScaler Gateway (01 juillet 2025)",
+      "summary": "**[Mise à jour du 17 juillet 2025]** L'éditeur a publié un lien contenant une méthode d'évaluation permettant d'identifier des tentatives d'exploitation dans les journaux applicatifs et systèmes [12]. **[Mise à jour du…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-009/",
+      "date": "2025-07-01",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans Roundcube (05 juin 2025)",
+      "summary": "[Mise à jour du 06 juin 2025] Une preuve de concept est publiquement disponible. [Publication initiale] Le 01 juin 2025, Roundcube a publié des correctifs concernant une vulnérabilité critique affectant son portail de…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-008/",
+      "date": "2025-06-05",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (EPMM) (14 mai 2025)",
+      "summary": "[Mise à jour du 15 mai 2025] Une preuve de concept est publiquement disponible sur Internet. [Publication initiale] Le 13 mai 2025, Ivanti a publié deux avis de sécurité concernant les vulnérabilités CVE-2025-4427 et…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-007/",
+      "date": "2025-05-14",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans les produits Fortinet (13 mai 2025)",
+      "summary": "Le 13 mai 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité CVE-2025-32756. Celle-ci permet à un attaquant non authentifié d'exécuter du code arbitraire à distance. L'éditeur indique que cette…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-006/",
+      "date": "2025-05-13",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans SAP NetWeaver (28 avril 2025)",
+      "summary": "Le 24 avril 2025, SAP a publié un bulletin de sécurité relatif à la vulnérabilité CVE-2025-31324 qui permet l'exécution de code arbitraire à distance pour un utilisateur non authentifié. Cette vulnérabilité est…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-005/",
+      "date": "2025-04-28",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Activités de post-exploitation dans Fortinet FortiGate (11 avril 2025)",
+      "summary": "Fortinet a publié le 10 avril 2025 un billet de blogue [1] indiquant l'utilisation d'une technique de post-exploitation qui permet une atteinte à la confidentialité des données de l'ensemble du système des équipements…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-004/",
+      "date": "2025-04-11",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans les produits Ivanti (03 avril 2025)",
+      "summary": "**\\[Mise à jour du 11 avril 2025\\]** Le CERT-FR a connaissance d'une preuve de concept publique permettant de provoquer une exécution de code arbitraire à distance. **[Mise à jour du 04 avril 2025]** Le CERT-FR a…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-003/",
+      "date": "2025-04-03",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans les produits Fortinet (14 janvier 2025)",
+      "summary": "\\[Mise à jour du 28 janvier 2025\\] Une preuve de concept permettant l'exploitation de cette vulnérabilité est disponible publiquement. Le 14 janvier 2025, Fortinet a publié un avis de sécurité concernant la…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-002/",
+      "date": "2025-01-14",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025)",
+      "summary": "Une vulnérabilité jour-zéro de type débordement de pile a été découverte dans Ivanti Connect Secure (ICS), Policy Secure (IPS), Neurons for Zero Trust Access (ZTA) gateways. Cette vulnérabilité, d'identifiant…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2025-ALE-001/",
+      "date": "2025-01-09",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Multiples vulnérabilités sur l'interface d'administration des équipements Palo Alto Networks (15 novembre 2024)",
+      "summary": "Le 8 novembre 2024, Palo Alto Networks a publié un avis de sécurité relatif à une vulnérabilité critique dans certains pare-feux Palo Alto Networks. Elle permet à un attaquant non authentifié d'exécuter du code…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-015/",
+      "date": "2024-11-15",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Multiples vulnérabilités dans Fortinet FortiManager (23 octobre 2024)",
+      "summary": "**[Mise à jour du 14 janvier 2025]** **Publication des correctifs** Le 14 janvier 2025, Fortinet a publié un avis de sécurité relatif à la vulnérabilité CVE-2024-50566 qui correspond à la vulnérabilité de type…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-014/",
+      "date": "2024-10-23",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Exploitations de vulnérabilités dans Ivanti Cloud Services Appliance (CSA) (22 octobre 2024)",
+      "summary": "Ivanti a publié plusieurs avis de sécurité sur des vulnérabilités affectant CSA qui sont activement exploitées : * le 10 septembre 2024, Ivanti a publié un avis de sécurité concernant la vulnérabilité CVE-2024-8190 qui…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-013/",
+      "date": "2024-10-22",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024)",
+      "summary": "**[Mise à jour du 10 octobre 2024]** Le 28 septembre 2024, Elastic Security Labs a publié des règles de détection au format propriétaire de l'éditeur (cf. section Documentation), qui sont confirmées par les analyses du…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-012/",
+      "date": "2024-09-27",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans SonicWall (10 septembre 2024)",
+      "summary": "Le 22 août 2024, Sonicwall a publié un correctif concernant la vulnérabilité critique CVE-2024-40766 affectant les pare-feux Sonicwall génération 5, 6 et 7. Cette vulnérabilité, de type contrôle d'accès défaillant,…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-011/",
+      "date": "2024-09-10",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Multiples vulnérabilités dans Roundcube (09 août 2024)",
+      "summary": "Le 4 août 2024, Roundcube a publié des correctifs concernant les vulnérabilités critiques CVE-2024-42008 et CVE-2024-42009 affectant son serveur de courriel. Ces vulnérabilités permettent des injections de code…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-010/",
+      "date": "2024-08-09",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans OpenSSH (01 juillet 2024)",
+      "summary": "Le 1 juillet 2024, OpenSSH a publié un avis de sécurité concernant la vulnérabilité critique CVE-2024-6387. Cette vulnérabilité permet à un attaquant non authentifié d'exécuter du code arbitraire à distance avec les…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-009/",
+      "date": "2024-07-01",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans les produits Check Point (30 mai 2024)",
+      "summary": "[Mise à jour du 31 mai 2024] Des preuves de concept sont désormais disponibles publiquement sur Internet. De plus, l'éditeur indique avoir détecté des tentatives de compromission à partir du 7 avril 2024.…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-008/",
+      "date": "2024-05-30",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans Palo Alto Networks GlobalProtect (12 avril 2024)",
+      "summary": "\\[Mise à jour du 10 mai 2024\\] Le CERT-FR est intervenu pour le traitement d'une compromission par rançongiciel au sein d'une entité française. Dans le cadre de cette attaque, la vulnérabilité a été exploitée pour…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-006/",
+      "date": "2024-04-12",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "[MàJ] Vulnérabilité dans Fortinet FortiOS (09 février 2024)",
+      "summary": "\\[Mise à jour du 19 mars 2024\\] Le CERT-FR a connaissance de codes d'exploitation publics et de nouvelles tentatives d'exploitation. Le 8 février 2024, Fortinet a publié l'avis de sécurité concernant la vulnérabilité…",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-004/",
+      "date": "2024-02-09",
+      "source": "CERT-FR"
     },
     {
       "category": "Sauvegardes",
@@ -56,6 +376,22 @@
       "link": "https://www.it-connect.fr/lanssi-un-nouveau-guide-sur-la-gestion-des-attaques-de-ransomware/",
       "date": "2020-09-08",
       "source": "IT-Connect"
+    },
+    {
+      "category": "Alertes CERT-FR",
+      "title": "Vulnérabilité dans Apple Mac OS X (24 juillet 2015)",
+      "summary": "Une vulnérabilité a été découverte dans Apple Mac OS X. Elle permet à un attaquant de provoquer une élévation de privilèges.",
+      "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2015-ALE-009/",
+      "date": "2015-07-24",
+      "source": "CERT-FR"
+    },
+    {
+      "category": "Réglementation",
+      "title": "Découvrez la directive NIS 2 et passez à l'action !",
+      "summary": "Présentation de l'ANSSI sur la directive NIS 2 et le socle de cybersécurité imposé aux entités essentielles et importantes. Les sauvegardes y figurent parmi les mesures simples souvent non appliquées.",
+      "link": "https://messervices.cyber.gouv.fr/documents-ressources/2026-03-27-NIS2.pdf",
+      "date": "",
+      "source": "ANSSI"
     }
   ]
 }
