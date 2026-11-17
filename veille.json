@@ -1,6 +1,38 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-11-13",
   "items": [
+    {
+      "category": "Sauvegardes",
+      "title": "Scality ARTESCA and Veeam: A Solid Combo for Cyber-Resilient Backups",
+      "summary": "As an active Veeam Vanguard, I had the opportunity to attend Veeam 100 Summit 2026 in Lisbon last week. With other Vanguards, Legends, MVPs and Rising Stars, we had great insights into the latest developments from…",
+      "link": "https://www.vladan.fr/scality-artesca-and-veeam-a-solid-combo-for-cyber-resilient-backups/",
+      "date": "2026-11-13",
+      "source": "Vladan"
+    },
+    {
+      "category": "Sauvegardes",
+      "title": "Commvault Rethinks Recovery for the AI Era – Commvault SHIFT 2026",
+      "summary": "Recovery is no longer something you do after things break. We have that old model – something goes wrong, you call the recovery team, and they put the pieces back together, they restore and clean the data, and so on.…",
+      "link": "https://www.vladan.fr/commvault-rethinks-recovery-for-the-ai-era-commvault-shift-2026/",
+      "date": "2026-11-11",
+      "source": "Vladan"
+    },
+    {
+      "category": "Sauvegardes",
+      "title": "StarWind VTL: Building a Solid, Immutable Backup Strategy in the Ransomware Era",
+      "summary": "Ransomware is no longer a distant threat — it is a daily reality for backup administrators. Attackers have learned that encrypting production data is only half the job. The real leverage comes from destroying or…",
+      "link": "https://www.vladan.fr/starwind-vtl-building-a-solid-immutable-backup-strategy-in-the-ransomware-era/",
+      "date": "2026-11-02",
+      "source": "Vladan"
+    },
+    {
+      "category": "Sauvegardes",
+      "title": "Veeam 100 Summit Lisbon 2026 – A New Location, Same Great Energy",
+      "summary": "Here we are again – this time in beautiful Lisbon for the Veeam 100 Summit 2026. After years of Prague (with that special Czech connection for me) and one edition in Berlin, Veeam chose a brand-new location on the…",
+      "link": "https://www.vladan.fr/veeam-100-summit-lisbon-2026-a-new-location-same-great-energy/",
+      "date": "2026-10-27",
+      "source": "Vladan"
+    },
     {
       "category": "Sauvegardes",
       "title": "Proxmox Backup Server : la sauvegarde locale est saine, mais où est la copie hors ligne ?",
