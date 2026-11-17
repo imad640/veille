@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Met à jour veille.json à partir de flux RSS (bibliothèque standard uniquement)."""
+"""Met à jour veille.json : veille uniquement sur les sauvegardes informatiques.
+Bibliothèque standard uniquement."""
 import json, re, sys, html
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -9,26 +10,26 @@ from email.utils import parsedate_to_datetime
 OUT = "veille.json"
 MAX_ITEMS = 60
 
-# (nom affiché, URL du flux, catégorie fixe ou None = classement par mots-clés)
+# (nom affiché, URL du flux RSS). Un flux en panne est simplement ignoré.
 FEEDS = [
-    ("CERT-FR", "https://www.cert.ssi.gouv.fr/alerte/feed/", "Alertes CERT-FR"),
-    ("IT-Connect", "https://www.it-connect.fr/feed/", None),
-    ("ZATAZ", "https://www.zataz.com/feed/", None),
-    ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews", None),
+    ("CERT-FR", "https://www.cert.ssi.gouv.fr/avis/feed/"),
+    ("CERT-FR", "https://www.cert.ssi.gouv.fr/alerte/feed/"),
+    ("IT-Connect", "https://www.it-connect.fr/feed/"),
+    ("LeMagIT", "https://www.lemagit.fr/rss/ALL.xml"),
+    ("Le Monde Informatique", "https://www.lemondeinformatique.fr/flux-rss/thematique/toutes-les-actualites/rss.xml"),
+    ("Vladan", "https://www.vladan.fr/feed/"),
 ]
 
+# Un article n'est gardé que s'il parle de sauvegarde (termes + éditeurs de logiciels de sauvegarde)
 KEYWORDS = [
-    ("Sauvegardes", ["sauvegarde", "backup", "restauration", "immuable", "3-2-1", "pra ", "plan de reprise"]),
-    ("Ransomwares", ["ransomware", "rançongiciel", "rancongiciel", "lockbit", "qilin", "akira", "ransomhub", "double extorsion"]),
-    ("Réglementation", ["nis2", "nis 2", "dora", "rgpd", "cyber resilience act", "loi de programmation"]),
+    "sauvegarde", "backup", "3-2-1", "immuable", "plan de reprise", "pra ",
+    "veeam", "commvault", "veritas", "netbackup", "backup exec", "acronis", "cohesity",
+    "rubrik", "nakivo", "arcserve", "bacula", "bareos", "duplicati", "active backup",
 ]
 
-def classify(text):
+def is_backup(text):
     t = text.lower()
-    for cat, words in KEYWORDS:
-        if any(w in t for w in words):
-            return cat
-    return None
+    return any(k in t for k in KEYWORDS)
 
 def clean(s, n=220):
     s = html.unescape(re.sub(r"<[^>]+>", " ", s or ""))
@@ -44,27 +45,23 @@ def to_date(s):
         m = re.match(r"(\d{4}-\d{2}-\d{2})", s.strip())
         return m.group(1) if m else ""
 
-def parse(xml_bytes, source, fixed_cat):
+def parse(xml_bytes, source):
     root = ET.fromstring(xml_bytes)
     out = []
-    for it in list(root.iter("item")) + list(root.iter("{http://www.w3.org/2005/Atom}entry")):
+    atom = "{http://www.w3.org/2005/Atom}"
+    for it in list(root.iter("item")) + list(root.iter(atom + "entry")):
         def g(tag):
             e = it.find(tag)
-            if e is None:
-                e = it.find("{http://www.w3.org/2005/Atom}" + tag)
-            return e
+            return e if e is not None else it.find(atom + tag)
         t, l, d, p = g("title"), g("link"), g("description"), g("pubDate")
         if d is None: d = g("summary")
         if p is None: p = g("updated")
         title = clean(t.text if t is not None else "", 160)
-        link = (l.text or l.get("href") or "").strip() if l is not None else ""
+        link = ((l.text or l.get("href") or "").strip()) if l is not None else ""
         summary = clean(d.text if d is not None else "")
-        if not title or not link.startswith("http"):
+        if not title or not link.startswith("http") or not is_backup(title + " " + summary):
             continue
-        cat = fixed_cat or classify(title + " " + summary)
-        if not cat:
-            continue
-        out.append({"category": cat, "title": title, "summary": summary, "link": link,
+        out.append({"category": "Sauvegardes", "title": title, "summary": summary, "link": link,
                     "date": to_date(p.text if p is not None else ""), "source": source})
     return out
 
@@ -78,21 +75,27 @@ def main():
         old = json.load(open(OUT, encoding="utf-8")).get("items", [])
     except Exception:
         old = []
+    # on garde l'historique, mais uniquement ce qui parle de sauvegarde
+    old = [o for o in old if is_backup(o.get("title", "") + " " + o.get("summary", ""))]
     new = []
-    for source, url, cat in FEEDS:
+    for source, url in FEEDS:
         try:
-            new += parse(fetch(url), source, cat)
+            got = parse(fetch(url), source)
+            print(f"[ok] {source} ({url}) : {len(got)} article(s) sur les sauvegardes")
+            new += got
         except Exception as e:           # un flux en panne ne bloque pas les autres
-            print(f"[ignoré] {source}: {e}", file=sys.stderr)
+            print(f"[ignoré] {source} ({url}) : {e}", file=sys.stderr)
     seen, items = set(), []
-    for it in new + old:                 # les nouveaux d'abord, on garde l'historique
+    for it in new + old:
         if it["link"] in seen:
             continue
         seen.add(it["link"]); items.append(it)
     items.sort(key=lambda x: x.get("date") or "0000", reverse=True)
-    data = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "items": items[:MAX_ITEMS]}
+    dates = [i["date"] for i in items if i.get("date")]
+    data = {"updated": max(dates) if dates else datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "items": items[:MAX_ITEMS]}
     json.dump(data, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    print(f"{len(new)} article(s) lus, {len(data['items'])} conservé(s)")
+    print(f"{len(new)} nouveau(x) lu(s), {len(data['items'])} conservé(s)")
 
 if __name__ == "__main__":
     main()
