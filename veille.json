@@ -1,6 +1,14 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-25",
   "items": [
+    {
+      "category": "Sauvegardes",
+      "title": "AltaStor: Free, Open-Source VMware Backup, Replication and Migration – A Practical Option for SMBs and MSPs",
+      "summary": "What if I told you that there is a backup software which costs ZERO? Yes, it is absolutely true. AltaStor (https://altastor.com/) takes a different approach: the core Backup & Replication product is free and…",
+      "link": "https://www.vladan.fr/altastor-free-open-source-vmware-backup-replication-and-migration-a-practical-option-for-smbs-and-msps/",
+      "date": "2026-11-25",
+      "source": "Vladan"
+    },
     {
       "category": "Sauvegardes",
       "title": "Scality ARTESCA and Veeam: A Solid Combo for Cyber-Resilient Backups",
