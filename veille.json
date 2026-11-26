@@ -1,6 +1,14 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "items": [
+    {
+      "category": "Sauvegardes",
+      "title": "Multiples vulnérabilités dans les produits Veeam (26 novembre 2026)",
+      "summary": "De multiples vulnérabilités ont été découvertes dans les produits Veeam. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance. L'éditeur fournit également une mesure de contournement…",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1629/",
+      "date": "2026-11-26",
+      "source": "CERT-FR"
+    },
     {
       "category": "Sauvegardes",
       "title": "AltaStor: Free, Open-Source VMware Backup, Replication and Migration – A Practical Option for SMBs and MSPs",
